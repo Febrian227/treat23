@@ -104,6 +104,11 @@ body {
   box-shadow: 0 0 0 2px rgba(30, 90, 168, 0.2);
 }
 
+.form-actions {
+  display: flex;
+  gap: 10px;
+}
+
 button {
   background-color: #1e5aa8;
   color: #fff;
@@ -117,6 +122,14 @@ button {
 
 button:hover {
   background-color: #16498c;
+}
+
+.btn-secondary {
+  background-color: #6b7c93;
+}
+
+.btn-secondary:hover {
+  background-color: #556277;
 }
 
 .pesan-sukses {
@@ -155,6 +168,26 @@ table tbody tr:nth-child(even) {
 
 table tbody tr:hover {
   background-color: #e1ecfa;
+}
+
+.aksi-cell {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.btn-edit {
+  background-color: #d9a406;
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.btn-edit:hover {
+  background-color: #b3870a;
 }
 
 .btn-hapus {
@@ -206,5 +239,9 @@ footer {
   table td {
     padding: 6px;
     font-size: 0.85rem;
+  }
+
+  .form-actions {
+    flex-direction: column;
   }
 }
