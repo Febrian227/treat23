@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Input Data Layanan</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <h1>Portal Sistem Layanan Mahasiswa</h1>
+    <nav>
+      <a href="index.html" class="active">Form Input</a>
+      <a href="data.html">Tabel Data</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Input Data Layanan</h2>
+    <form id="formInput">
+      <div class="form-group">
+        <label for="nama">Nama</label>
+        <input type="text" id="nama" placeholder="Masukkan nama" required>
+      </div>
+
+      <div class="form-group">
+        <label for="nim">NIM</label>
+        <input type="text" id="nim" placeholder="Masukkan NIM" required>
+      </div>
+
+      <div class="form-group">
+        <label for="jenisLayanan">Jenis Layanan</label>
+        <select id="jenisLayanan" required>
+          <option value="">-- Pilih Jenis Layanan --</option>
+          <option value="Surat Aktif Kuliah">Surat Aktif Kuliah</option>
+          <option value="Legalisir Ijazah">Legalisir Ijazah</option>
+          <option value="Pengajuan Cuti">Pengajuan Cuti</option>
+          <option value="Lainnya">Lainnya</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="keterangan">Keterangan</label>
+        <textarea id="keterangan" placeholder="Tambahkan keterangan (opsional)"></textarea>
+      </div>
+
+      <button type="submit">Simpan Data</button>
+    </form>
+
+    <p id="pesanSukses" class="pesan-sukses"></p>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Sistem Layanan Mahasiswa</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

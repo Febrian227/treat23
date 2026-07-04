@@ -1,0 +1,210 @@
+/* ===== Reset & Base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eef4fb;
+  color: #1a2b3c;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  background-color: #1e5aa8;
+  color: #fff;
+  padding: 16px 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar h1 {
+  font-size: 1.2rem;
+}
+
+.navbar nav a {
+  color: #d9e8fb;
+  text-decoration: none;
+  margin-left: 16px;
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.navbar nav a:hover {
+  background-color: #16498c;
+}
+
+.navbar nav a.active {
+  background-color: #fff;
+  color: #1e5aa8;
+}
+
+/* ===== Container ===== */
+.container {
+  flex: 1;
+  max-width: 700px;
+  width: 100%;
+  margin: 24px auto;
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(30, 90, 168, 0.15);
+}
+
+.container h2 {
+  color: #1e5aa8;
+  margin-bottom: 16px;
+  border-bottom: 2px solid #cfe0f5;
+  padding-bottom: 8px;
+}
+
+/* ===== Form ===== */
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #1e5aa8;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #b9cfe8;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #f7fafe;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 70px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #1e5aa8;
+  box-shadow: 0 0 0 2px rgba(30, 90, 168, 0.2);
+}
+
+button {
+  background-color: #1e5aa8;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #16498c;
+}
+
+.pesan-sukses {
+  margin-top: 14px;
+  color: #1d7a3c;
+  font-weight: bold;
+  min-height: 20px;
+}
+
+/* ===== Tabel ===== */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  border: 1px solid #cfe0f5;
+  padding: 10px;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+table th {
+  background-color: #1e5aa8;
+  color: #fff;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f2f7fd;
+}
+
+table tbody tr:hover {
+  background-color: #e1ecfa;
+}
+
+.btn-hapus {
+  background-color: #c0392b;
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.btn-hapus:hover {
+  background-color: #962d22;
+}
+
+.pesan-kosong {
+  text-align: center;
+  margin-top: 16px;
+  color: #6b7c93;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 14px;
+  background-color: #1e5aa8;
+  color: #d9e8fb;
+  font-size: 0.85rem;
+}
+
+/* ===== Responsif ===== */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar nav a {
+    margin: 4px;
+  }
+
+  .container {
+    margin: 12px;
+    padding: 16px;
+  }
+
+  table th,
+  table td {
+    padding: 6px;
+    font-size: 0.85rem;
+  }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabel Data Layanan</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <h1>Sistem Layanan Mahasiswa</h1>
+    <nav>
+      <a href="index.html">Form Input</a>
+      <a href="data.html" class="active">Tabel Data</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Tabel Data Layanan</h2>
+
+    <div class="table-wrapper">
+      <table id="tabelData">
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Nama</th>
+            <th>NIM</th>
+            <th>Jenis Layanan</th>
+            <th>Keterangan</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody id="isiTabel">
+          <!-- Data diisi otomatis lewat JavaScript -->
+        </tbody>
+      </table>
+    </div>
+
+    <p id="pesanKosong" class="pesan-kosong">Belum ada data.</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Sistem Layanan Mahasiswa</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
